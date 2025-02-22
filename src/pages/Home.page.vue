@@ -25,39 +25,48 @@ function onUpdateFavoriteTools() {
   <div class="pt-50px">
     <div class="grid-wrapper">
       <div class="grid grid-cols-1 gap-12px lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4">
-        <ColoredCard v-if="config.showBanner" :title="$t('home.follow.title')" :icon="IconHeart">
-          {{ $t('home.follow.p1') }}
+        <ColoredCard v-if="config.showBanner" title="MeT-Tools" :icon="IconHeart">
+          MeT-Tools | 
           <a
-            href="https://github.com/CorentinTh/it-tools"
+            href="https://www.met6.top:444/"
             rel="noopener"
             target="_blank"
-            :aria-label="$t('home.follow.githubRepository')"
-          >GitHub</a>
-          {{ $t('home.follow.p2') }}
-          <a
-            href="https://x.com/ittoolsdottech"
-            rel="noopener"
-            target="_blank"
-            :aria-label="$t('home.follow.twitterXAccount')"
-          >X</a>.
-          {{ $t('home.follow.thankYou') }}
-          <n-icon :component="IconHeart" />
+            aria-label="MeT-Home"
+          >MeT-Home</a>
         </ColoredCard>
 
-        <a href="https://renderize.tech?utm_source=it-tools&utm_medium=banner" target="_blank" rel="noopener" class="text-current decoration-none">
+        <a href="/ps/" target="_blank" rel="noopener" class="text-current decoration-none">
           <c-card v-if="config.showSponsorBanner" class="cursor-pointer !border-2px !hover:border-primary">
             <div class="flex items-center justify-between">
               <n-icon :component="IconFileDescription" class="text-neutral-400 dark:text-neutral-600" size="40" />
               <div class="rounded-full bg-#eeeeee px-10px py-2px text-xs text-black dark:bg-#333333 dark:text-white">
-                Sponsor
+                工具
               </div>
             </div>
 
             <div class="my-5px flex items-baseline gap-4 text-balance text-lg text-black dark:text-white">
-              Generate PDFs from HTML with Renderize API
+              在线 PS
             </div>
             <div class="text-neutral-500 dark:text-neutral-400">
-              Automate your document generation with our fast, developer-friendly API. Start with a free forever plan.
+              在线 Photoshop 工具. 在浏览器上快速处理图片.
+            </div>
+          </c-card>
+        </a>
+
+        <a href="/mcrgb/" target="_blank" rel="noopener" class="text-current decoration-none">
+          <c-card v-if="config.showSponsorBanner" class="cursor-pointer !border-2px !hover:border-primary">
+            <div class="flex items-center justify-between">
+              <n-icon :component="IconFileDescription" class="text-neutral-400 dark:text-neutral-600" size="40" />
+              <div class="rounded-full bg-#eeeeee px-10px py-2px text-xs text-black dark:bg-#333333 dark:text-white">
+                工具
+              </div>
+            </div>
+
+            <div class="my-5px flex items-baseline gap-4 text-balance text-lg text-black dark:text-white">
+              Minecraft RGB 文字工具
+            </div>
+            <div class="text-neutral-500 dark:text-neutral-400">
+              改自 RGBirdflop 工具, 在浏览器里生成 Minecraft 渐变文字, 支持多种格式.
             </div>
           </c-card>
         </a>
